@@ -1,17 +1,20 @@
 package com.example;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class DuplicateChar {
     public boolean isDuplicate(String input){
         if(input.length()<2){
             return false;
         }
-        input=input.replaceAll("[^a-zA-Z0-9]", "");
-        for(int i=0;i<input.length();i++){
-            for(int j=i+1;j<input.length();j++){
-                if(input.toLowerCase().charAt(i)==input.toLowerCase().charAt(j)){
-                    return true;
-                }
+        input=input.replaceAll("[^A-Za-z0-9]", "");
+        Set<Character> findDuplicate=new HashSet<>();
+        for(char c:input.toLowerCase().toCharArray()){
+            if(findDuplicate.contains(c)){
+                return true;
             }
+            findDuplicate.add(c);
         }
         return false;
     }
