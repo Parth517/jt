@@ -1,6 +1,10 @@
 package com.example;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class NumberIsPrimeTest {
     private NumberIsPrime np;
@@ -12,20 +16,22 @@ public class NumberIsPrimeTest {
         np = new NumberIsPrime();
     }
 
-    public void tearDown() {
+    @AfterAll
+    public static void tearDown() {
         System.out.println("No of tests passed:" + passedTests);
         System.out.println("No of failed passed:" + failedTests);
     }
 
     public void runTest(int number, boolean expectedResult) {
-        int result = isPrime(number);
+        boolean result = np.isPrime(number);
         if (result == expectedResult) {
             passedTests++;
-            System.out.println("Test passed for " + input + " expected result " + expectedResult + " got " + result);
+            System.out.println("Test passed for " + number + " expected result " + expectedResult + " got " + result);
         } else {
             failedTests++;
-            System.out.println("Test failed for " + input + " expected result " + expectedResult + " got " + result);
+            System.out.println("Test failed for " + number + " expected result " + expectedResult + " got " + result);
         }
+        assertEquals(expectedResult, result);
     }
 
     @Test
