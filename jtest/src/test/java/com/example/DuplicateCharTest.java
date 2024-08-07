@@ -53,4 +53,8 @@ public class DuplicateCharTest {
     public void testCheckDuplicateCases(){
         runTest("Abcdae", true);
     }
+    @Test
+    public void testCheckDuplicateCasesDifferentChars(){
+        runTest("Abcdefg", false);
+    }
 }
