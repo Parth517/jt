@@ -28,4 +28,8 @@ public class NumberIsPrimeTest {
         }
     }
 
+    @Test
+    public void testIsPrime1Digit(){
+        runTest(3,true);
+    }
 }
