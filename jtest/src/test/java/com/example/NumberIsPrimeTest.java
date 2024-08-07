@@ -70,4 +70,8 @@ public class NumberIsPrimeTest {
     public void testIsNotPrime6Digits(){
         runTest(100000,false);
     }
+    @Test 
+    public void testIsPrime6Digits(){
+        runTest(100003,true);
+    }
 }
