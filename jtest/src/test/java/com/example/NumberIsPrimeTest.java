@@ -42,4 +42,8 @@ public class NumberIsPrimeTest {
     public void testIsNotPrime1Digit(){
         runTest(4,false);
     }
+    @Test 
+    public void testIsNotPrime2Digits(){
+        runTest(23,true);
+    }
 }
