@@ -38,4 +38,8 @@ public class NumberIsPrimeTest {
     public void testIsPrime1Digit(){
         runTest(3,true);
     }
+    @Test
+    public void testIsNotPrime1Digit(){
+        runTest(4,false);
+    }
 }
