@@ -64,6 +64,6 @@ public class NumberIsPrimeTest {
     }
     @Test 
     public void testIsPrime5Digits(){
-        runTest(10001,true);
+        runTest(10613,true);
     }
 }
