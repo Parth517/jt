@@ -41,4 +41,8 @@ public class DuplicateCharTest {
     public void testCheckDuplicateIn2DifferentChars() {
         runTest("AC", false);
     }
+    @Test
+    public void testCheckDuplicateInMultipleChars() {
+        runTest("ACDEA", true);
+    }
 }
