@@ -69,4 +69,8 @@ public class DuplicateCharTest {
     public void testCheckDuplicateCasesWhenMultipleSpaceIsPassedDifferentChars(){
         runTest("Parth  Des", false);
     }
+    @Test
+    public void testCheckDuplicateCasesWhenMulpipleSpaceIsPassed(){
+        runTest("Parth  Deshpande", true);
+    }
 }
