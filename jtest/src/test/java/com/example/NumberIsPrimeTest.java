@@ -58,4 +58,8 @@ public class NumberIsPrimeTest {
     public void testIsNotPrime3Digits(){
         runTest(112,false);
     }
+    @Test 
+    public void testIsPrime5Digits(){
+        runTest(10000,false);
+    }
 }
