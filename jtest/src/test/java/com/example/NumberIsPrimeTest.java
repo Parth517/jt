@@ -59,7 +59,11 @@ public class NumberIsPrimeTest {
         runTest(112,false);
     }
     @Test 
-    public void testIsPrime5Digits(){
+    public void testIsNotPrime5Digits(){
         runTest(10000,false);
+    }
+    @Test 
+    public void testIsPrime5Digits(){
+        runTest(10001,true);
     }
 }
