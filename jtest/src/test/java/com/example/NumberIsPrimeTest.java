@@ -43,7 +43,11 @@ public class NumberIsPrimeTest {
         runTest(4,false);
     }
     @Test 
-    public void testIsNotPrime2Digits(){
+    public void testIPrime2Digits(){
         runTest(23,true);
+    }
+    @Test 
+    public void testIsNotPrime2Digits(){
+        runTest(24,false);
     }
 }
