@@ -50,4 +50,8 @@ public class NumberIsPrimeTest {
     public void testIsNotPrime2Digits(){
         runTest(24,false);
     }
+    @Test 
+    public void testIsPrime3Digits(){
+        runTest(113,true);
+    }
 }
