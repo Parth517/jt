@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.DuplicateCharTest" time="0.072" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\jt\jtest\target\test-classes;D:\jt\jtest\target\classes;C:\Users\prathamesh\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\prathamesh\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\prathamesh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\prathamesh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\prathamesh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\prathamesh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\prathamesh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\prathamesh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\prathamesh\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.0\junit-vintage-engine-5.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.23.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\prathamesh\AppData\Local\Temp\surefire1764165620894541278\surefirebooter9643841160981355039.jar C:\Users\prathamesh\AppData\Local\Temp\surefire1764165620894541278 2024-08-07T19-51-47_711-jvmRun1 surefire15019929587911581124tmp surefire_06640463066048153122tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\jt\jtest\target\test-classes;D:\jt\jtest\target\classes;C:\Users\prathamesh\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\prathamesh\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\prathamesh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\prathamesh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\prathamesh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\prathamesh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\prathamesh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\prathamesh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\prathamesh\.m2\repository\org\junit\vintage\junit-vintage-engine\5.10.0\junit-vintage-engine-5.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\prathamesh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.23.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\jt\jtest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\prathamesh\AppData\Local\Temp\surefire1764165620894541278\surefirebooter9643841160981355039.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.23+9"/>
+    <property name="user.name" value="Tanmay pc"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-11.0.23+9"/>
+    <property name="localRepository" value="C:\Users\prathamesh\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\prathamesh\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.23"/>
+    <property name="user.dir" value="D:\jt\jtest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.23.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-11.0.23.9-hotspot\bin;C:\Ruby32-x64\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Java\jdk1.8.0_92\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Setups\hadoop-2.8.0\bin;D:\Setups\hadoop-2.8.0\sbin;C:\Program Files\dotnet\;C:\ProgramData\ComposerSetup\bin;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\Go\bin;C:\go-ipfs;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\Redist\;C:\Program Files\Calibre2\;C:\Users\prathamesh\AppData\Local\Pub\Cache\bin;C:\MinGW\bin;C:\Users\prathamesh\AppData\Roaming\nvm;C:\Program Files\nodejs;G:\Documents;G:\Downloads;C:\msys64\usr\bin;C:\Ruby32-x64\msys64\usr\include;C:\Ruby32-x64\msys64\mingw64;C:\Ruby32-x64\msys64\mingw64\include;C:\Program Files\CMake\bin;C:\libyaml-master;G:\apache-maven-3.9.8\bin;C:\Users\prathamesh\.console-ninja\.bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\prathamesh\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\prathamesh\AppData\Local\Programs\Python\Python37\;C:\Users\prathamesh\AppData\Local\Microsoft\WindowsApps;C:\Users\prathamesh\AppData\Local\Programs\Microsoft VS Code\bin;D:\Parth\InstgramBot;C:\flutter\bin;C:\Users\prathamesh\AppData\Local\Programs\Python\Python37-32\Scripts;C:\\Program Files\\Git\\bin\\bash.exe;C:\MinGW\bin;C:\php;C:\Windows\System32\wbem\;C:\Users\prathamesh\AppData\Roaming\Composer\vendor\bin;C:\Program Files\heroku\bin;C:\Users\prathamesh\.dotnet\tools;c:\users\prathamesh\.local\bin;c:\users\prathamesh\appdata\roaming\python\python38\scripts;C:\Users\prathamesh\go\bin;C:\Java\jdk1.8.0_181\bin;C:\Java\jdk1.8.0_121\bin;C:\Java\jdk1.8.0_92\bin;C:\Users\prathamesh\AppData\Roaming\npm;C:\Users\prathamesh\AppData\Local\Android\Sdk;C:\flutter\bin\;C:\Program Files\platform-tools;C:\Users\prathamesh\AppData\Local\Android\Sdk\emulator\emulator;C:\Program Files\Java\jdk1.8.0_291;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\bin;C:\Users\prathamesh\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Exercism;C:\msys64;C:\libyaml-master;C:\Users\prathamesh\.bun\bin;G:\apache-maven-3.9.8\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="11.0.23+9"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testCheckDuplicateIn2Chars" classname="com.example.DuplicateCharTest" time="0.049"/>
+</testsuite>

@@ -17,7 +17,7 @@ public class DuplicateCharTest {
     }
 
     @AfterAll
-    public void tearDown(){
+    public static void tearDown(){
         System.out.println("No of tests passed: " + passedTests);
         System.out.println("No of tests failed: " + failedTests);
     }
