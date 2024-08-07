@@ -5,6 +5,7 @@ public class DuplicateChar {
         if(input.length()<2){
             return false;
         }
+        input=input.replaceAll("[^a-zA-Z0-9]", "");
         for(int i=0;i<input.length();i++){
             for(int j=i+1;j<input.length();j++){
                 if(input.toLowerCase().charAt(i)==input.toLowerCase().charAt(j)){
