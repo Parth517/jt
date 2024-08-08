@@ -48,6 +48,6 @@ public class StringCalculatorTest {
 
     @Test 
     public void stringHavingCustomDelimitersShouldBeValid(){
-        assertEquals(stringCalculator.add("\\;\n1;2"), 3);
+        assertEquals(stringCalculator.add("//;\n1;2"), 3);
     }
 }
