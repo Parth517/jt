@@ -26,5 +26,9 @@ public class StringCalculatorTest {
         assertEquals(stringCalculator.add(""), 0);
 
     }
-    
+    @Test 
+    public void stringHavingOnly1digit(){
+        assertEquals(stringCalculator.add("20"),20);
+    }
+   
 }
