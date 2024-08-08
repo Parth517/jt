@@ -8,14 +8,18 @@ public class StringCalculator {
             return 0;
         }else if(number.contains(",")){
             String[] stringOfNumbers=number.split(",");
-            return toInt(stringOfNumbers[0])+toInt(stringOfNumbers[1]);
+            int sum=0;
+            for(int i=0;i<stringOfNumbers.length;i++){
+                sum+=Integer.parseInt(stringOfNumbers[i]);
+            }
+            return sum;
         }
         else{
             return Integer.parseInt(number);
         }
     }
 
-    private static int toInt(String number) throws NumberFormatException{
+    private static int toInt(String number) throws NumberFormatException {
         return Integer.parseInt(number);
     }
 

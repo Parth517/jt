@@ -33,6 +33,11 @@ public class StringCalculatorTest {
     @Test 
     public void stringHavingTwoNumbersDelemitedByCommasShouldReturnSum(){
         assertEquals(stringCalculator.add("10,20"),30);
+    }
+
+    @Test
+    public void stringHavingMultipleDigitsShouldReturnSum(){
+        assertEquals(stringCalculator.add("20,40,60"), 120);
     } 
    
 }
