@@ -13,11 +13,18 @@ public class StringCalculatorTest {
 
     @BeforeEach
     public void setup(){
+        System.out.println("Starting Tests...");
         stringCalculator=new StringCalculator();
     }
 
     @Test
-    public void emptyStringShouldReturnZero(){
+    public void emptyStringWithSpacesShouldReturnZero(){
         assertEquals(stringCalculator.add(" "), 0);
     }
+    @Test 
+    public void emptyStringSHouldReturnZero(){
+        assertEquals(stringCalculator.add(""), 0);
+
+    }
+   
 }
