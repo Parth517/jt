@@ -2,12 +2,13 @@ package com.example;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.*;
 
 public class StringCalculator {
     public static int add(String number) {
         int ans = 0;
         number = number.replaceAll(" ", "");
-        if (number.equals("")) {
+        if (number.isEmpty()) {
             return 0;
         } else {
             return PatternMatcher(number);
@@ -27,9 +28,15 @@ public class StringCalculator {
     }
 
     private static int SumOfNumbers(String[] numbers) {
-
+        ArrayList<Integer>NegativeNumbers=new ArrayList<>();
         int sum = 0;
         for (String num : numbers) {
+            if(toInt(num)<0){
+                NegativeNumbers.add(toInt(num));
+            }
+            if(NegativeNumbers.size()>0){
+                throw new RuntimeException();
+            }
             sum += Integer.parseInt(num);
         }
         return sum;
