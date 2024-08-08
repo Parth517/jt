@@ -39,5 +39,10 @@ public class StringCalculatorTest {
     public void stringHavingMultipleDigitsShouldReturnSum(){
         assertEquals(stringCalculator.add("20,40,60"), 120);
     } 
-   
+    
+
+    @Test 
+    public void stringHavingNewlineShouldBeValid(){
+        assertEquals(stringCalculator.add("20,\n60,20"),100);
+    }
 }
