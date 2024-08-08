@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.StringCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.example.StringCalculatorTest
-stringHavingNewlineShouldBeValid  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.NumberFormatException: 
-For input string: "
-60"
-	at com.example.StringCalculatorTest.stringHavingNewlineShouldBeValid(StringCalculatorTest.java:46)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.example.StringCalculatorTest

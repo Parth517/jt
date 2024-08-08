@@ -43,6 +43,6 @@ public class StringCalculatorTest {
 
     @Test 
     public void stringHavingNewlineShouldBeValid(){
-        assertEquals(stringCalculator.add("20,\n60,20"),100);
+        assertEquals(stringCalculator.add("20\n60,20"),100);
     }
 }

@@ -16,7 +16,7 @@ public class StringCalculator {
     }
 
     private static int sumOfNumber(String number) throws NumberFormatException {
-        String[] stringOfNumbers = number.split(",");
+        String[] stringOfNumbers = number.split(",|\n");
         int sum = 0;
         for (String num : stringOfNumbers) {
             sum += Integer.parseInt(num);
