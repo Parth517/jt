@@ -45,4 +45,9 @@ public class StringCalculatorTest {
     public void stringHavingNewlineShouldBeValid(){
         assertEquals(stringCalculator.add("20\n60,20"),100);
     }
+
+    @Test 
+    public void stringHavingCustomDelimitersShouldBeValid(){
+        assertEquals(stringCalculator.add("\\;\n1;2"), 3);
+    }
 }
