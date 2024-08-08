@@ -32,7 +32,7 @@ public class StringCalculatorTest {
     }
     @Test 
     public void stringHavingTwoNumbersDelemitedByCommasShouldReturnSum(){
-        assertEquals(stringCalculator.add("10","20"),30);
+        assertEquals(stringCalculator.add("10,20"),30);
     } 
    
 }
