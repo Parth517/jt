@@ -28,21 +28,24 @@ public class StringCalculator {
     }
 
     private static int SumOfNumbers(String[] numbers) {
-        ArrayList<Integer>NegativeNumbers=new ArrayList<>();
+        ArrayList<Integer> NegativeNumbers = new ArrayList<>();
         int sum = 0;
         for (String num : numbers) {
-            if(toInt(num)<0){
+            if (toInt(num) < 0) {
                 NegativeNumbers.add(toInt(num));
             }
-            if(NegativeNumbers.size()>0){
-                throw new RuntimeException();
+            if (!NegativeNumbers.isEmpty()) {
+                String negativesString = NegativeNumbers.toString()
+                        .replace("[", "")
+                        .replace("]", "");
+                throw new RuntimeException("Negatives are not allowed: " + negativesString);
             }
             sum += Integer.parseInt(num);
         }
         return sum;
     }
 
-    private static String[] SplitUsingCustomDelimiter(String number){
+    private static String[] SplitUsingCustomDelimiter(String number) {
         Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(number);
         matcher.matches();
         String customDelimiter = matcher.group(1);

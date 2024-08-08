@@ -66,5 +66,14 @@ public class StringCalculatorTest {
 
         }
     }
+    @Test
+    public void stringHavingNegativeNumberShouldRaiseExceptionAndShowValue(){
+        try{
+            stringCalculator.add("-1,3,4");
+            fail("Failed should raise exception");
+        }catch(Exception e){
+            assertEquals("Negatives are not allowed: -1",e.getMessage());
+        }
+    }
     
 }
