@@ -50,4 +50,9 @@ public class StringCalculatorTest {
     public void stringHavingCustomDelimitersShouldBeValid(){
         assertEquals(stringCalculator.add("//;\n1;2"), 3);
     }
+
+    @Test
+    public void stringHavingDiffrentCustomDelimitersShouldBeValid(){
+        assertEquals(stringCalculator.add("//.\n4.5"), 9);
+    }
 }

@@ -20,23 +20,27 @@ public class StringCalculator {
 
     private static int PatternMatcher(String number) throws NumberFormatException {
         if (number.startsWith("//")) {
-            Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(number);
-            if (matcher.matches()) {
-                String customDelimiter = matcher.group(1);
-                String numbers = matcher.group(2);
-                return SumOfNumbers(numbers.split(Pattern.quote(customDelimiter)));
-            }
+            return SumOfNumbers(SplitUsingCustomDelimiter(number));
         }
         String[] stringOfNumbers = number.split(",|\n");
         return SumOfNumbers(stringOfNumbers);
     }
 
     private static int SumOfNumbers(String[] numbers) {
+
         int sum = 0;
         for (String num : numbers) {
             sum += Integer.parseInt(num);
         }
         return sum;
+    }
+
+    private static String[] SplitUsingCustomDelimiter(String number){
+        Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(number);
+        matcher.matches();
+        String customDelimiter = matcher.group(1);
+        String numbers = matcher.group(2);
+        return numbers.split(Pattern.quote(customDelimiter));
     }
 
 }
