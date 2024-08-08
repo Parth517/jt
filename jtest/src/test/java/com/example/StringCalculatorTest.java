@@ -1,6 +1,7 @@
 package com.example;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 import org.junit.jupiter.api.AfterAll;
@@ -54,5 +55,15 @@ public class StringCalculatorTest {
     @Test
     public void stringHavingDiffrentCustomDelimitersShouldBeValid(){
         assertEquals(stringCalculator.add("//.\n4.5"), 9);
+    }
+
+    @Test
+    public void stringHavingNegativeNumberShouldRaiseException(){
+        try{
+            stringCalculator.add("-1,3,4");
+            fail("Failed should raise exception");
+        }catch(Exception e){
+
+        }
     }
 }
