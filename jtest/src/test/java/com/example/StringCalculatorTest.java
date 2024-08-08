@@ -27,8 +27,12 @@ public class StringCalculatorTest {
 
     }
     @Test 
-    public void stringHavingOnly1digit(){
+    public void stringHavingOnly1NumberShouldReturnNumber(){
         assertEquals(stringCalculator.add("20"),20);
     }
+    @Test 
+    public void stringHavingTwoNumbersDelemitedByCommasShouldReturnSum(){
+        assertEquals(stringCalculator.add("10","20"),30);
+    } 
    
 }
