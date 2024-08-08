@@ -26,5 +26,5 @@ public class StringCalculatorTest {
         assertEquals(stringCalculator.add(""), 0);
 
     }
-   
+    
 }
